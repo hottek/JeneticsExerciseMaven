@@ -1,4 +1,4 @@
-public class RealFunction {
+public class Example {
     public static void main(String[] args) {
 
     }
