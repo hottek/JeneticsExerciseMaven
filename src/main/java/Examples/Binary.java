@@ -19,9 +19,9 @@ public class Binary {
 
     public static void main(String[] args) {
 
-        // Factories know how to create new random instances of the same type
+        // Factories know how to create new random instances of the same type and with the same constraints. Used by Alterers.
         // Every Gene and every Chromosome is its own Factory (as in "implements Factory")
-        // Here: Creation of Genotype consisting of one random BitChromosome (Genes are Bits) of length 16. Chance of '1' is 15%.
+        // Here: Creation of Genotype consisting of one BitChromosome (Genes are Bits) of length 16. Chance of '1' is 15% for new random instances.
         Factory<Genotype<BitGene>> gtf = Genotype.of(BitChromosome.of(16, 0.15));
         System.out.println(gtf);
 

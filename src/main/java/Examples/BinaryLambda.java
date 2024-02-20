@@ -9,6 +9,7 @@ public class BinaryLambda {
     public static void main(String[] args) {
 
         // Same as in Binary.java, but shorter. :)
+        // When defining the Genotype Representation directly in the builder, we don't need Genotype.of(...).
         Engine<BitGene, Integer> builder = Engine
                 .builder(
                         gt -> gt.chromosome().as(BitChromosome.class).bitCount(),
